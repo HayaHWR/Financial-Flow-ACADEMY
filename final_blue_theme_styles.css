@@ -1,0 +1,204 @@
+
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f9ff;
+    color: #333;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Header Navigation */
+header {
+    background: #003366;
+    color: #003366;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #66b2ff;
+}
+
+/* Hero Section */
+section#home {
+    text-align: center;
+    background: linear-gradient(135deg, #003366, #66b2ff);
+    color: white;
+    padding: 5rem 1rem;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+section#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+section#home p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #66b2ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background: #00509e;
+    transform: translateY(-3px);
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 2rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+    background: #f4f9ff;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #003366;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #66b2ff;
+    display: block;
+    margin: 0.5rem auto 0;
+}
+
+/* Courses List */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+ul li {
+    background: #e1f0ff;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #003366;
+    font-weight: bold;
+    width: calc(30% - 1rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+table th {
+    background: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background: #e1f0ff;
+    font-size: 1.1rem;
+}
+
+table tr:hover td {
+    background: #d6e9ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
